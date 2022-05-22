@@ -9,15 +9,15 @@ public class CaesarCipher {
         for(int i = 0; i < encrypted.length(); i++) {
             char currChar = encrypted.charAt(i);
             int idx = alphabet.indexOf(Character.toUpperCase(currChar));
-            char newChar = shiftedAlphabet.charAt(idx);
             if (Character.isLowerCase(currChar) && idx != -1) {
+                char newChar = shiftedAlphabet.charAt(idx);
                 newChar = Character.toLowerCase(newChar);
                 encrypted.setCharAt(i, newChar);
             }    
-
             else if (Character.isUpperCase(currChar) && idx != -1){
+                char newChar = shiftedAlphabet.charAt(idx);
                 encrypted.setCharAt(i, newChar);
-            }     
+            }    
         }
         return encrypted.toString();
     }
@@ -57,13 +57,13 @@ public class CaesarCipher {
     
     
     public void testEncryptTwoKeys() {
-        String encryptedTwoKeys = encryptTwoKeys("First Legion", 23, 17);
+        String encryptedTwoKeys = encryptTwoKeys("At noon be in the conference room with your hat on for a surprise party. YELL LOUD!", 8, 21);
         System.out.println(encryptedTwoKeys);
     }
     
     public void testCaesar() {
         int key = 17;
-        String encrypted = encrypt("First Legion",23);
+        String encrypted = encrypt("At noon be in the conference room with your hat on for a surprise party. YELL LOUD!",15);
         System.out.println(encrypted);
         /*FileResource fr = new FileResource();
         String message = fr.asString();
