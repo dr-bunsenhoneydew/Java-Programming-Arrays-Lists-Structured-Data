@@ -62,10 +62,13 @@ public class TestCaesarCipherTwo {
         String message2 = halfOfString(input, 1);
         int foundKey1 = getKey(message1);
         int foundKey2 = getKey(message2);
+        
         System.out.println("Key 1: " + foundKey1 + "\t Key 2: " + foundKey2);
+        
         CaesarCipherTwo cc3 = new CaesarCipherTwo(foundKey1,foundKey2);
         String answer = cc3.decrypt(input);
-        return answer.toString();
+        return answer.toString() + "Key 1: " + foundKey1 + "\t Key 2: " + foundKey2;
+        
     }
     
     public void simpleTests() {
@@ -80,5 +83,32 @@ public class TestCaesarCipherTwo {
         
         String breakCC = breakCaesarCipher(encrypted);
         System.out.println("Code break answer is: " + breakCC);
+    }
+    
+    public void finalTests() {
+        /*CaesarCipherTwo cc2 = new CaesarCipherTwo(21,8);
+        String encrypted = cc2.encrypt("Can you imagine life WITHOUT the internet AND computers in your pocket?");
+        System.out.println("Answer 2: " + encrypted);
+        //Returns: Xii twp duvodvz gqam EDBCWPB bcm qibzzimo VVY xwhxpbzzn dv gjcm kwxszb?
+        
+        CaesarCipherTwo cc6 = new CaesarCipherTwo(14,24);
+        String decrypted = cc6.decrypt("Hfs cpwewloj loks cd Hoto kyg Cyy.");
+        System.out.println("Answer 6: "  + decrypted);
+        //Returns: The original name of Java was Oak.
+        
+        String breakCC7 = breakCaesarCipher("Aal uttx hm aal Qtct Fhljha pl Wbdl. Pvxvxlx!");
+        System.out.println("Answer 7: " + breakCC7);
+        //Returns: The name of the Java Mascot is Duke. Woeoeee!*/
+        
+        FileResource fr8 = new FileResource();
+        String message8 = fr8.asString();
+        String breakCC8 = breakCaesarCipher(message8);
+        System.out.println("Answer 8: " + breakCC8);
+        //Returns: One of the many hallmarks
+        
+        //Also returns: 17,4
+        
+        
+        
     }
 }
