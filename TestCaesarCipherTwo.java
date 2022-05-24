@@ -86,7 +86,7 @@ public class TestCaesarCipherTwo {
     }
     
     public void finalTests() {
-        /*CaesarCipherTwo cc2 = new CaesarCipherTwo(21,8);
+        CaesarCipherTwo cc2 = new CaesarCipherTwo(21,8);
         String encrypted = cc2.encrypt("Can you imagine life WITHOUT the internet AND computers in your pocket?");
         System.out.println("Answer 2: " + encrypted);
         //Returns: Xii twp duvodvz gqam EDBCWPB bcm qibzzimo VVY xwhxpbzzn dv gjcm kwxszb?
@@ -98,7 +98,7 @@ public class TestCaesarCipherTwo {
         
         String breakCC7 = breakCaesarCipher("Aal uttx hm aal Qtct Fhljha pl Wbdl. Pvxvxlx!");
         System.out.println("Answer 7: " + breakCC7);
-        //Returns: The name of the Java Mascot is Duke. Woeoeee!*/
+        //Returns: The name of the Java Mascot is Duke. Woeoeee!
         
         FileResource fr8 = new FileResource();
         String message8 = fr8.asString();
