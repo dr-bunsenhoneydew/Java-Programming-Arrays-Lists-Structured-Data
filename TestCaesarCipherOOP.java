@@ -10,7 +10,7 @@ import edu.duke.*;
 
 public class TestCaesarCipherOOP {
     
-    public int[] countLetters(String message) {
+    private int[] countLetters(String message) {
         int[] counts = new int [26];
         message = message.toLowerCase();
         for (int i = 0; i < 26; i++) {
@@ -58,5 +58,16 @@ public class TestCaesarCipherOOP {
         String decryptedMessage = ccTest.decrypt(encrypted);
         System.out.println("Decrypted message: " + decryptedMessage);
         breakCaesarCipher(encrypted);
+        
+        
+    }
+    
+    public void finalTests() {
+        CaesarCipherOOP cc1 = new CaesarCipherOOP(15);
+        String encrypted = cc1.encrypt("Can you imagine life WITHOUT the internet AND computers in your pocket?");
+        System.out.println("Answer 1: " + encrypted);
+        //Returns: Rpc ndj xbpvxct axut LXIWDJI iwt xcitgcti PCS rdbejitgh xc ndjg edrzti?
+        
+        
     }
 }
