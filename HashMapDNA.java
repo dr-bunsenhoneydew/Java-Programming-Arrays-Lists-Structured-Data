@@ -1,10 +1,3 @@
-
-/**
- * Write a description of HashMapDNA here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 import edu.duke.*;
 import java.util.*;
 
