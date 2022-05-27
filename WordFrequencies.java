@@ -1,11 +1,3 @@
-
-/**
- * Find out how many times each word occurs, and
- * in particular the most frequently occurring word.
- * 
- * @author Duke Software Team
- * @version 1.0
- */
 import edu.duke.*;
 import java.util.ArrayList;
 
