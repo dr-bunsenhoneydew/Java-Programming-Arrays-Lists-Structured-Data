@@ -1,11 +1,3 @@
-
-/**
- * Write a description of TestCaesarCipherTwo here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-
 import edu.duke.*;
 
 public class TestCaesarCipherTwo {
