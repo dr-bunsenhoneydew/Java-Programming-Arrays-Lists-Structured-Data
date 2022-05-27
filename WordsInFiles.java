@@ -20,7 +20,6 @@ public class WordsInFiles {
                 myMap.put(word, newWordList);
             }
             else if (myMap.containsKey(word) && !myMap.get(word).contains(fName)) {
-                //Testing..
                 myMap.get(word).add(fName);
             }
         }
