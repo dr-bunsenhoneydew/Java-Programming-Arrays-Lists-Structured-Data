@@ -1,10 +1,3 @@
-
-/**
- * Write a description of CaesarCipherOOP here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
 public class CaesarCipherOOP {
     private String alphabet;
     private String shiftedAlphabet;
